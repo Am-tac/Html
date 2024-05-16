@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>
+    <h1>Mashin - hesab</h1>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ماشین حساب</title>
+</head>
+
+<body>
+    <script>
+        let x = +prompt("  عدداول را وارد کنید! ");
+        let y = +prompt(" عدد دوم را وارد کنید!");
+        let z = prompt("\n   یک علامت بین ( + و - و * و / و ** و // و % ) وارد کن", "(مقدار<//> برابر با جذر)");
+
+        if (z == "+") {
+            alert(x + y);
+        }
+        if (z == "**") {
+            alert(x ** y);
+        }
+        if (z == "/") {
+            alert(x / y);
+        }
+        if (z == "*") {
+            alert(x * y);
+        }
+        if (z == "//") {
+            let i = Math.sqrt(x);
+            let o = Math.sqrt(y);
+            alert("جذر عدد اول ");
+            alert(i);
+            alert("جذر عدد دوم ");
+            alert(o);
+        }
+        if (z == "%") {
+            alert(x % y);
+        }
+        if (z == false) {
+            alert("قرار بود علامت وارد کنی");
+        }
+
+    </script>
+</body>
+
+</html>
