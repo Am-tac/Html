@@ -1,11 +1,12 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fa">
 
 <head>
     <h1>Mashin - hesab</h1>
     <h2>برای تکرار از دستور</h2>
     <h2> CTRL + R </h2>
-    <h2></h2>یا دوباره بارگذاری کنید </h2>
+    <h2>یا دوباره بارگذاری کنید</h2>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,41 +18,42 @@
         let x = +prompt("  عدداول را وارد کنید! ");
         let y = +prompt(" عدد دوم را وارد کنید!");
         let z = prompt("\n   یک علامت بین ( + و - و * و / و ** و // و % ) وارد کن", "(مقدار<//> برابر با جذر)");
-        switch (z) {
-            case "+":
-                alert(x + y)
-                break;
-            case "/":
-                alert(x / y)
-                break;
-            case "*":
-                alert(x * y)
-                break;
-            case "-":
-                alert(x - y)
-                break;
-            case "**":
-                alert(x ** y)
-                break;
-            case "%":
-                alert(x % y)
-                break;
-            case "//":
-
-                let i = Math.sqrt(x);
-                let o = Math.sqrt(y);
-                alert("جذر عدد اول ");
-                alert(i);
-                alert("جذر عدد دوم ");
-                alert(o);
-
-                break;
-
-
-
-            default:
-                break;
-        }
+            switch (z) {
+              case "+":
+                  alert(x + y)
+                  break;
+              case "/":
+                  alert(x / y)
+                  break;
+              case "*":
+                  alert(x * y)
+                  break;
+              case "-":
+                  alert(x - y)
+                  break;
+              case "**":
+                  alert(x ** y)
+                  break;
+              case "%":
+                  alert(x % y)
+                  break;
+              case "//":
+  
+                  let i = Math.sqrt(x);
+                  let o = Math.sqrt(y);
+                  alert("جذر عدد اول ");
+                  alert(i);
+                  alert("جذر عدد دوم ");
+                  alert(o);
+  
+                  break;
+  
+              default:
+  
+               alert("قرار بود علامت وارد کنی")
+  
+                  break;
+          }
 
         // if (z == "+") {
         //     alert(x + y);
