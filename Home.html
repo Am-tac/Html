@@ -1,0 +1,37 @@
+<html>
+<body>
+    <h1>نمرات کلاس 209 </h1>
+    <h3> رشته مبانی برنامه نویسی </h3>
+    <script>
+
+        let pas = prompt("PASSWORD")
+        let pas1 = "amir15";
+
+        if (pas == pas1) {
+            let nm = [15, 11, 14, 17, 19, 13, 10];
+            document.write("<br>-------------------------------------<br>")
+            document.write(nm, " = نمرات قبل از افزودن", "<br>");
+            console.log("نمرات قبل از افزودن", nm);
+            let nms = +prompt("مقداری که نیاز دارید به نمرات اضفه کنید را وارد کنید");
+            let len = nm.length;
+            let x = nm;
+            for (let i = 0; i < len; i++) {
+                x[i] = x[i] + nms;
+            }
+            document.write("<br>-------------------------------------<br>")
+            document.write("<br>", " نمرات بعد از افزودن = ", x);
+            document.write("<br>-------------------------------------<br>")
+
+            console.log("\n");
+            console.log(x);
+
+
+        }
+        else {
+            alert("NOT PASSWORD")
+        }
+
+    </script>
+
+</body>
+</html>
