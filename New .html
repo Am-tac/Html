@@ -18,42 +18,77 @@
         let x = +prompt("  عدداول را وارد کنید! ");
         let y = +prompt(" عدد دوم را وارد کنید!");
         let z = prompt("\n   یک علامت بین ( + و - و * و / و ** و // و % ) وارد کن", "(مقدار<//> برابر با جذر)");
-            switch (z) {
-              case "+":
-                  alert(x + y)
-                  break;
-              case "/":
-                  alert(x / y)
-                  break;
-              case "*":
-                  alert(x * y)
-                  break;
-              case "-":
-                  alert(x - y)
-                  break;
-              case "**":
-                  alert(x ** y)
-                  break;
-              case "%":
-                  alert(x % y)
-                  break;
-              case "//":
+         let a = z ;
+
+        function Mashin (a) {
+            if (z == "+") {
+            alert(x + y);
+        }
+            if (z == "**") {
+            alert(x ** y);
+        }
+            if (z == "/") {
+            alert(x / y);
+        }
+            if (z == "*") {
+            alert(x * y);
+        }
+            if (z == "//") {
+            let i = Math.sqrt(x);
+            let o = Math.sqrt(y);
+            alert(" جذر عدد اول ");
+            alert(i);
+            alert("جذر عدد دوم ");
+            alert(o);
+        }
+            if (z == "%") {
+            alert(x % y);
+        }
+            if (z == false) {
+            alert("قرار بود علامت وارد کنی");
+        }
+
+            
+        }
+        Mashin();
+        
+       
+        //     switch (z) {
+        //       case "+":
+        //           alert(x + y)
+        //           break;
+        //       case "/":
+        //           alert(x / y)
+        //           break;
+        //       case "*":
+        //           alert(x * y)
+        //           break;
+        //       case "-":
+        //           alert(x - y)
+        //           break;
+        //       case "**":
+        //           alert(x ** y)
+        //           break;
+        //       case "%":
+        //           alert(x % y)
+        //           break;
+        //       case "//":
   
-                  let i = Math.sqrt(x);
-                  let o = Math.sqrt(y);
-                  alert("جذر عدد اول ");
-                  alert(i);
-                  alert("جذر عدد دوم ");
-                  alert(o);
+        //           let i = Math.sqrt(x);
+        //           let o = Math.sqrt(y);
+        //           alert("جذر عدد اول ");
+        //           alert(i);
+        //           alert("جذر عدد دوم ");
+        //           alert(o);
   
-                  break;
+        //           break;
   
-              default:
+        //       default:
   
-               alert("قرار بود علامت وارد کنی")
+        //        alert("قرار بود علامت وارد کنی")
   
-                  break;
-          }
+        //           break;
+        //   }
 
         // if (z == "+") {
         //     alert(x + y);
